@@ -2,12 +2,22 @@
   "name": "@nx-mf/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve host --open --devRemotes=\"dashboard,invoice\"",
+    "start:host": "nx serve host --open",
+    "start:dashboard": "nx serve dashboard --open",
+    "start:invoice": "nx serve invoice --open"
+  },
   "private": true,
   "dependencies": {
+    "@nrwl/web": "^19.2.3",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-is": "18.3.1",
+    "react-query": "^3.39.3",
+    "react-router-dom": "6.11.2",
     "styled-components": "5.3.6",
     "tslib": "^2.3.0"
   },
